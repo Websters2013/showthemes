@@ -1,0 +1,567 @@
+@charset "utf-8";
+/* Smart Pricing Tables
+--------------------------------------- */
+
+/* Open Sans google font import
+--------------------------------------- */
+
+/* @pricing table wrappers
+---------------------------------- */
+.smart-grids{ max-width:1140px; margin:0 auto; }
+.smart-wrapper{ display:block;
+    padding:60px 20px;
+}
+.smart-pricing,
+.smart-pricing *{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.smart-pricing {
+    line-height: 1.231;
+    font-weight: 400;
+    font-size: 14px;
+    color: #626262;
+}
+
+/* @pricing table grid
+--------------------------------- */
+.smart-pricing .pricing-tables,
+.smart-pricing .pricing-tables .colm-list{ display:block;  position:relative; }
+.smart-pricing .pricing-tables:before,
+.smart-pricing .pricing-tables:after { display: table; content: ""; line-height: 0; }
+.smart-pricing .pricing-tables:after{ clear: both; }
+.smart-pricing .pricing-tables .colm:hover:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    border: 3px solid #1da4b8;
+}
+.smart-pricing .pricing-tables .colm:hover .pricing-header {
+    background: #1da4b8;
+}
+.smart-pricing .pricing-tables .colm:hover .pricing-header:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #1da4b8;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.smart-pricing .pricing-tables .colm .pricing-footer {
+    position: relative;
+    z-index: 1;
+}
+.smart-pricing .pricing-tables .colm:hover .pricing-header h4 {
+    color: #000;
+}
+.smart-pricing .pricing-tables>.colm:first-child:hover:before {
+    display: none;
+}
+.smart-pricing .pricing-tables>.colm:first-child:hover .pricing-header:before {
+    display: none;
+}
+.smart-pricing .pricing-tables>.colm:first-child:hover .pricing-header {
+    background: #000;
+}
+.smart-pricing .pricing-tables>.colm:first-child:hover .pricing-header h4 {
+    color: #000;
+}
+/* @pricing table columns
+--------------------------------------------------------- */
+.smart-pricing .pricing-tables .colm{
+    min-height:1px;
+    position:relative;
+    float:left;
+    border-left: 1px solid #ebebeb;
+}
+.smart-pricing .pricing-tables>.colm:first-child {
+    border-left: none;
+    width: 170px;
+}
+.smart-pricing .pricing-tables>.colm:first-child .pricing-header:after{
+    content: '';
+    position: absolute;
+    width: 20000px;
+    height: 100%;
+    background: #000;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* seperated pricing table columns
+---------------------------------------------------------- */
+.smart-pricing .separated-tables{ margin:0 -10px; }
+.smart-pricing .separated-tables .colm{	padding-left:10px; padding-right:10px;}
+
+/* pricing table columns
+---------------------------------------------------------- */
+.smart-pricing .six-colm .colm		{	width: 11.7%;	}
+.smart-pricing .five-colm .colm		{	width: 20%;		}
+.smart-pricing .four-colm .colm		{	width: 25%;		}
+.smart-pricing .three-colm .colm	{	width: 33.33%; 	}
+.smart-pricing .two-colm .colm		{	width: 50%; 		}
+.smart-pricing .one-colm .colm		{	width: 100%; 	}
+.smart-pricing .six-colm .swiper-slide		{	width: 14.28% !important;	}
+.smart-pricing .five-colm .swiper-slide		{	width: 20% !important;		}
+.smart-pricing .four-colm .swiper-slide		{	width: 25% !important;		}
+.smart-pricing .three-colm .swiper-slide	{	width: 33.33% !important; 	}
+.smart-pricing .two-colm .swiper-slide		{	width: 50% !important; 		}
+.smart-pricing .one-colm .swiper-slide		{	width: 100% !important; 	}
+
+.smart-pricing .swiper-slide .colm {
+    width: 100% !important;
+}
+
+/* @general pricing table styling
+------------------------------------------ */
+.smart-pricing .pricing-tables .pricing-header{ position:relative;
+    background-color: #000000;
+}
+.smart-pricing .pricing-tables ul,
+.smart-pricing .pricing-tables ul li,
+.smart-pricing .pricing-tables .pricing-header h3,
+.smart-pricing .pricing-tables .pricing-header h4{
+    padding:0;
+    margin:0;
+}
+.smart-pricing .pricing-tables .pricing-header h3,
+.smart-pricing .pricing-tables .pricing-header h4{
+    font-weight:300;
+}
+.smart-pricing .pricing-tables ul,
+.smart-pricing .pricing-tables ul li{ list-style-type:none; }
+
+/* @pricing table styles || elegant + dark
+------------------------------------------------------------ */
+/*.smart-pricing .dark-style .colm-list,*/
+.smart-pricing .elegant-style .colm-list{
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.smart-pricing .dark-style ul,
+.smart-pricing .elegant-style ul{ margin-left:-1px;  }
+.smart-pricing .elegant-style ul {
+    border-top:0;
+    padding: 0 10px;
+}
+
+.smart-pricing .dark-style ul{ background: #333;  border: 1px solid #000; }
+.smart-pricing .dark-style ul li,
+.smart-pricing .elegant-style ul li {
+    text-align:center;
+}
+
+.smart-pricing .elegant-style ul li {
+    color: #666;
+    /*border-bottom:1px solid #d2d2d2;*/
+}
+
+.smart-pricing .dark-style ul li{
+    color: #D0D0D0;
+    background-color: #333;
+    border: 1px solid #444;
+    border-bottom:1px solid #111;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.6);
+}
+.smart-pricing .dark-style .pricing-footer,
+.smart-pricing .elegant-style .pricing-footer{
+    padding: 20px 10px;
+    margin-top: 0;
+    margin-left: -1px;
+    text-align: center;
+}
+.header-colored {
+    border-bottom: none;
+}
+.smart-pricing .dark-style .pricing-header,
+.smart-pricing .elegant-style .pricing-header{margin-left: -1px; text-align:center;border-bottom: none;}
+.smart-pricing .pricing-tables .header-colored h3,
+.smart-pricing .pricing-tables .header-colored h4{ color:#fff; }
+.smart-pricing .dark-style .pricing-header h3,
+.smart-pricing .elegant-style .pricing-header h3 {
+    padding: 23px 5px 3px;
+    letter-spacing: 0;
+    text-transform:uppercase;
+    color: #000;
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    /*border: 1px solid #dbdfe3;*/
+}
+
+.smart-pricing .dark-style .pricing-header h4,
+.smart-pricing .elegant-style .pricing-header h4 {
+    text-transform:uppercase;
+    padding: 2px 15px;
+    font-weight:400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.smart-pricing .dark-style .pricing-header h4 span,
+.smart-pricing .elegant-style .pricing-header h4 span { display: block; font-size: 46px; font-weight:300; }
+
+.smart-pricing .dark-style .pricing-header h4,
+.smart-pricing .elegant-style .pricing-header h4,
+.smart-pricing .dark-style .pricing-header h4 span,
+.smart-pricing .elegant-style .pricing-header h4 span{
+    -webkit-transition: font-size 0.4s;
+    -moz-transition: font-size 0.4s;
+    -ms-transition: font-size 0.4s;
+    -o-transition: font-size 0.4s;
+    transition: font-size 0.4s;
+}
+
+.smart-pricing .dark-style .featured-package .pricing-footer,
+.smart-pricing .elegant-style .featured-package .pricing-footer{ padding:25px 20px; }
+.smart-pricing .dark-style .featured-package .pricing-header h4 span,
+.smart-pricing .elegant-style .featured-package .pricing-header h4 span { font-size: 62px; }
+
+.smart-pricing:hover,
+.smart-pricing:hover .dark-style .featured-package,
+.smart-pricing:hover .elegant-style .featured-package{
+    z-index:1;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    -o-box-shadow:none;
+    box-shadow:none;
+}
+.smart-pricing .dark-style .colm-list:hover,
+.smart-pricing .elegant-style .colm-list:hover,
+.smart-pricing .dark-style .featured-package:hover,
+.smart-pricing .elegant-style .featured-package:hover{
+    margin: -20px 0 0 0;
+    position:relative;
+    z-index:99;
+    top:0;
+}
+/*.smart-pricing .dark-style .colm-list:hover .pricing-footer,*/
+/*.smart-pricing .elegant-style .colm-list:hover .pricing-footer,*/
+/*.smart-pricing .dark-style .featured-package:hover .pricing-footer,*/
+/*.smart-pricing .elegant-style .featured-package:hover .pricing-footer{ padding:25px 20px; }*/
+.smart-pricing .dark-style .colm-list:hover .pricing-header h4 span,
+.smart-pricing .elegant-style .colm-list:hover .pricing-header h4 span,
+.smart-pricing .dark-style .featured-package:hover .pricing-header h4 span,
+.smart-pricing .elegant-style .featured-package:hover .pricing-header h4 span{ font-size: 62px;   }
+
+/* features column
+------------------------------------------------------ */
+.smart-pricing .dark-style .features-list:hover,
+.smart-pricing .elegant-style .features-list:hover{
+    z-index:1;
+    margin:0;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    -o-box-shadow:none;
+    box-shadow:none;
+}
+
+.smart-pricing .dark-style .features-list .pricing-header h4 span,
+.smart-pricing .elegant-style .features-list .pricing-header h4 span,
+.smart-pricing .dark-style .features-list:hover .pricing-header h4 span,
+.smart-pricing .elegant-style .features-list:hover .pricing-header h4 span{
+    text-transform:none;
+    margin-top:46px;
+    font-size:46px;
+}
+
+.smart-pricing .elegant-style .features-list ul{
+    border-bottom: none;
+    border-top: none;
+    margin-top: 0;
+}
+.features-list ul span.info {
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    background: url(../img/info-bg.png) no-repeat;
+}
+.features-list ul span.info:hover > span {
+    visibility: visible;
+    opacity: 1;
+}
+.features-list ul span.info > span {
+    /* display: table; */
+    position: absolute;
+    padding-left: 17px;
+    z-index: 2;
+    left: 17px;
+    top: -35px;
+    /* bottom: -50px; */
+    width: 210px;
+    height: 88px;
+    opacity: 0;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    visibility: hidden;
+    overflow: hidden;
+}
+.features-list ul span.info > span > span:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 7px 7px 0;
+    border-color: transparent #ec3f33 transparent transparent;
+    top: 50%;
+    margin-top: -7px;
+    left: 10px;
+}
+.features-list ul span.info > span > span {
+    display: table-cell;
+    vertical-align: middle;
+    width: 200px;
+    height: 88px;
+    background: #ec3e33;
+    color: #fff;
+    text-align: left;
+    padding: 20px;
+    white-space: normal;
+    line-height: 1;
+}
+
+.smart-pricing .dark-style .features-list ul{ border-bottom:0; }
+.smart-pricing .dark-style .features-list ul li,
+.smart-pricing .elegant-style .features-list ul li{ text-align:left; white-space: nowrap;}
+
+/* zebra stripped pricing tables
+------------------------------------------------------------------------------- */
+.smart-pricing .dark-style.stripped-tables ul li:nth-child(even) { background: #272727; }
+.smart-pricing .elegant-style.stripped-tables ul li:nth-child(even) { background: #EBEBEB;  }
+
+/* buttons
+--------------------------------------------------------------- */
+.smart-pricing .pricing-button{
+    border:0;
+    width:100%;
+    height: 40px;
+    color:#444444;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 1.4em;
+    text-decoration:none;
+    background-color:#ddd;
+    -webkit-border-radius :3px;
+    -moz-border-radius :3px;
+    -o-border-radius :3px;
+    border-radius :3px;
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+.smart-pricing a.pricing-button {
+    line-height: 50px;
+}
+
+.smart-pricing .pricing-button:hover,
+.smart-pricing .pricing-button:active {
+    background: #C2C2C2;
+}
+
+.smart-pricing .six-colm .pricing-button {
+    font-size: 18px;
+    line-height: 18px;
+    padding: 12px 5px;
+    text-transform: uppercase;
+    background: #1da4b8;
+    font-family: "proximanova-semibold", sans-serif;
+    letter-spacing: 3px;
+    color: #fff;
+    transition: background .5s ease;
+}
+
+/* @ribbon
+----------------------------------------- */
+.smart-pricing .ribbon,
+.smart-pricing .ribbon-large{
+    width:75px;
+    height:78px;
+    overflow:hidden;
+    position:absolute;
+    right: 21px;
+    top: -31px;
+    z-index:1;
+}
+
+.smart-pricing .ribbon-inner{
+    font-family: "proximanova-bold",sans-serif;
+    letter-spacing:4px;
+    text-align:center;
+    position:relative;
+    padding:7px 0;
+    width: 93px;
+    z-index:1;
+    font-size: 14px;
+    line-height: 26px;
+    border-radius: 3px;
+    color: #000;
+    background: #dbdfe3;
+}
+.smart-pricing .ribbon-inner:after{
+    content:"";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 6.5px 0 6.5px;
+    border-color: #dbdfe3 transparent transparent;
+    position:absolute;
+    bottom:-7px;
+    margin-left: 50%;
+    left: -6.5px;
+}
+
+.smart-pricing .ribbon-inner:before{ left:0px; }
+.smart-pricing .ribbon-inner:after{ right:0px; }
+.smart-pricing .ribbon-large{ width:115px; height:118px; }
+.smart-pricing .ribbon-large .ribbon-inner{
+    left: 8px;
+    top: 2px;
+}
+.smart-pricing .odd ul {
+    /*background: #e9ecee;*/
+}
+.smart-pricing .odd .pricing-footer {
+    /*background: #e9ecee;*/
+}
+.smart-pricing .even .pricing-footer {
+    /*background: #fff;*/
+}
+.smart-pricing .colm ul {
+    /*border-left: 1px solid #d2d2d2;*/
+    /*border-right: 1px solid #d2d2d2;*/
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 13px;
+}
+.smart-pricing .colm:first-child ul {
+    border: none;
+    border-bottom: 1px solid #ebebeb;
+}
+.smart-pricing .colm .pricing-footer {
+    /*border: 1px solid #d2d2d2;*/
+    border-top: none;
+}
+.check-circle {
+    display: block;
+    width: 24px;
+    height: 18px;
+    background: url(../img/check1.png) no-repeat;
+    background-size: contain;
+    margin: 0 auto 0;
+    position: relative;
+    top: 8px;
+}
+.not-support {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url(../img/not-support.png) no-repeat;
+    background-size: contain;
+    margin: 0 auto 0;
+    position: relative;
+    top: 8px;
+}
+/* @responsive adjustments for mobile + tablet devices
+--------------------------------------------------------------------- */
+@media (max-width: 1023px) {
+
+    .smart-pricing .six-colm .swiper-slide		{
+        width: 100% !important;
+    }
+    .smart-pricing .pricing-tables>.colm:first-child {
+        border-right: 1px solid #ebebeb;
+    }
+    .smart-pricing .pricing-tables .colm {
+        border-left: none;
+    }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 980px) {
+.smart-pricing .six-colm .pricing-button,
+.smart-pricing .four-colm .pricing-button,
+.smart-pricing .five-colm .pricing-button{ font-size:1em; }
+.smart-pricing .six-colm .pricing-button{ font-size:1.4em; }
+.smart-pricing .six-colm ul li,
+.smart-pricing .four-colm ul li,
+.smart-pricing .five-colm ul li{ font-size:13px; }
+.smart-pricing .six-colm .pricing-button{ font-size:1.4em; }
+.smart-pricing .six-colm .colm,
+.smart-pricing .five-colm .colm{ width:33.33%;  margin-bottom:25px; }
+.smart-pricing .four-colm .colm{ width:50%;  margin-bottom:25px; }
+}
+
+@media (max-width: 768px) {
+    .smart-pricing:hover,
+    .smart-pricing:hover .dark-style .featured-package,
+    .smart-pricing:hover .elegant-style .featured-package,
+    .smart-pricing .dark-style .colm-list:hover,
+    .smart-pricing .dark-style .featured-package:hover,
+    .smart-pricing .dark-style .featured-package,
+    .smart-pricing .elegant-style .featured-package,
+    .smart-pricing .dark-style .colm-list:hover,
+    .smart-pricing .elegant-style .colm-list:hover,
+    .smart-pricing .dark-style .featured-package:hover,
+    .smart-pricing .elegant-style .featured-package:hover{
+        -webkit-box-shadow:none;
+        -moz-box-shadow:none;
+        -o-box-shadow:none;
+        box-shadow:none;
+        z-index:1;
+    }
+    .smart-pricing .pricing-tables{ margin:0;  }
+    .smart-pricing .five-colm .colm,
+    .smart-pricing .four-colm .colm,
+    .smart-pricing .pricing-tables .colm-list{
+        margin-top:0;
+        margin-bottom:30px;
+    }
+    .smart-pricing .pricing-tables .colm{
+        /*width: 100%;*/
+        /*float:none;*/
+        /*padding:0;*/
+    }
+    .smart-pricing .six-colm .pricing-button{ font-size: 1.1em; }
+    /*.smart-pricing .comparison-table .features-list{ display:none; }*/
+    .smart-pricing .comparison-table ul li:before {
+        /*font-weight: 700;*/
+        /*content: attr(data-feature);*/
+        /*text-align: center;*/
+        /*margin-bottom: 5px;*/
+        /*display: block;*/
+        /*font-size: 13px;*/
+    }
+    .smart-wrapper {
+        /*padding: 20px 0 0;*/
+    }
+    .smart-pricing .ribbon-large {
+        margin-left: 50%;
+        left: -57px;
+        right: auto;
+    }
+}
+
+@media (max-width: 326px) {
+    .smart-wrapper {
+        /*padding: 20px 0 0;*/
+        margin-bottom: -70px;
+    }
+}
