@@ -20,56 +20,56 @@ while (have_posts()) : the_post();
     ?>
     <!--need_event-->
     <section id="hero" class="need_event">
-            <?php //the_content(); ?>
+        <?php //the_content(); ?>
 
-            <div class="video_container">
-                <div>
-                    <h1>need <?php echo empty($q) ? 'an event website?' : "a <strong>$q</strong> ?"; ?></h1>
-                    <p>LOOK NO FURTHER</p>
+        <div class="video_container">
+            <div>
+                <h1>need <?php echo empty($q) ? 'an event website?' : "a <strong>$q</strong> ?"; ?></h1>
+                <p>LOOK NO FURTHER</p>
 
-                    <!-- need_event__percentages -->
-                    <div class="need_event__percentages">
+                <!-- need_event__percentages -->
+                <div class="need_event__percentages">
 
-                        <!-- need_event__percentages-item -->
-                        <div class="need_event__percentages-item">
-                            <span>94%</span> of users would recommend our themes
-                        </div>
-                        <!-- /need_event__percentages-item -->
-
-                        <!-- need_event__percentages-item -->
-                        <div class="need_event__percentages-item">
-                            <span>89%</span> lorem ipsum dolor sit amet
-                        </div>
-                        <!-- /need_event__percentages-item -->
-
-                        <!-- need_event__percentages-item -->
-                        <div class="need_event__percentages-item">
-                            <span>95%</span> lorem ipsum dolor
-                        </div>
-                        <!-- /need_event__percentages-item -->
-
+                    <!-- need_event__percentages-item -->
+                    <div class="need_event__percentages-item">
+                        <span>6000</span> Customers Worldwide
                     </div>
-                    <!-- /need_event__percentages -->
+                    <!-- /need_event__percentages-item -->
 
-                    <!-- need_event__featured -->
-                    <div class="need_event__featured">
-                        <span>Featured in</span>
-
-                        <div>
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/pic/featured1.png" width="118" height="30" alt="">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/pic/featured2.png" width="68" height="35" alt="">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/pic/featured3.png" width="50" height="50" alt="">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/pic/featured4.png" width="204" height="30" alt="">
-                        </div>
-
+                    <!-- need_event__percentages-item -->
+                    <div class="need_event__percentages-item">
+                        <span>9</span> Amazing Templates
                     </div>
-                    <!-- /need_event__featured -->
+                    <!-- /need_event__percentages-item -->
+
+                    <!-- need_event__percentages-item -->
+                    <div class="need_event__percentages-item">
+                        <span>100%</span> Made by Event Professionals
+                    </div>
+                    <!-- /need_event__percentages-item -->
 
                 </div>
-                <div class="need_event__video">
-                    <button class="play" data-video="<iframe src='<?php echo $video_url; ?>' frameborder='0' allowfullscreen></iframe>">watch video</button>
+                <!-- /need_event__percentages -->
+
+                <!-- need_event__featured -->
+                <div class="need_event__featured">
+                    <span>Featured in</span>
+
+                    <div>
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/pic/athemes.png" width="116" height="35" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/pic/cool.png" width="82" height="35" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/pic/wp-premium.png" width="185" height="35" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/pic/sourcewp.png" width="108" height="35" alt="">
+                    </div>
+
                 </div>
+                <!-- /need_event__featured -->
+
             </div>
+            <div class="need_event__video">
+                <button class="play" data-video="<iframe src='<?php echo $video_url; ?>' frameborder='0' allowfullscreen></iframe>">watch video</button>
+            </div>
+        </div>
         <!-- video_container -->
 
         <!-- hero__caption -->
@@ -90,9 +90,6 @@ while (have_posts()) : the_post();
 endwhile;
 wp_reset_query();
 ?>
-
-
-
 
 <!--theme List-->
 <section id="theme-list" data-action="<?php echo get_stylesheet_directory_uri(); ?>/php/themes.php">
@@ -115,99 +112,22 @@ wp_reset_query();
                 <div class="sorting-wrap__item">
                     <span>FEATURES</span>
 
-<!--                    <!--sorting-->
-<!--                    <ul class="sorting">-->
-<!--                        --><?php
-//                        $terms = get_terms("features");
-//                        $count = count($terms);
-//                        if ($count > 0) {
-//                            foreach ($terms as $term) {
-//                                echo '<li>
-//                                        <div class="nice-checkbox">
-//                                            <input type="checkbox" name="' . $term->slug . '" id="' . $term->slug . '1">
-//                                            <label for="' . $term->slug . '1" title="' . $term->name . '">' . $term->name . '</label>
-//                                        </div>
-//                                    </li>';
-//                            }
-//                        }
-//                        ?>
-<!---->
-<!--                        -->
-<!--                    </ul>-->
-<!--                    <!--/sorting-->
-
                     <ul class="sorting">
-                        <li>
-                            <div class="nice-checkbox">
-                                <input type="checkbox" name="academia" id="academia1">
-                                <label for="academia1" title="Academia">Academia</label>
-                            </div>
-                        </li><li>
-                            <div class="nice-checkbox">
-                                <input type="checkbox" name="all-themes" id="all-themes1">
-                                <label for="all-themes1" title="All Themes">All Themes</label>
-                            </div>
-                        </li><li>
-                            <div class="nice-checkbox">
-                                <input type="checkbox" name="annual-meeting" id="annual-meeting1">
-                                <label for="annual-meeting1" title="Annual Meeting">Annual Meeting</label>
-                            </div>
-                        </li><li>
-                            <div class="nice-checkbox">
-                                <input type="checkbox" name="club-night" id="club-night1">
-                                <label for="club-night1" title="Club Night">Club Night</label>
-                            </div>
-                        </li><li>
-                            <div class="nice-checkbox">
-                                <input type="checkbox" name="concert" id="concert1">
-                                <label for="concert1" title="Concert">Concert</label>
-                            </div>
-                        </li><li>
-                            <div class="nice-checkbox">
-                                <input type="checkbox" name="ceonference" id="ceonference1">
-                                <label for="ceonference1" title="Conference">Conference</label>
-                            </div>
-                        </li><li>
-                            <div class="nice-checkbox">
-                                <input type="checkbox" name="exhibition" id="exhibition1">
-                                <label for="exhibition1" title="Exhibition">Exhibition</label>
-                            </div>
-                        </li><li>
-                            <div class="nice-checkbox">
-                                <input type="checkbox" name="multiple-events" id="multiple-events1">
-                                <label for="multiple-events1" title="Multiple Events">Multiple Events</label>
-                            </div>
-                        </li><li>
-                            <div class="nice-checkbox">
-                                <input type="checkbox" name="seminars" id="seminars1">
-                                <label for="seminars1" title="Seminars">Seminars</label>
-                            </div>
-                        </li><li>
-                            <div class="nice-checkbox">
-                                <input type="checkbox" name="single-event" id="single-event1">
-                                <label for="single-event1" title="Single Event">Single Event</label>
-                            </div>
-                        </li><li>
-                            <div class="nice-checkbox">
-                                <input type="checkbox" name="single-page" id="single-page1">
-                                <label for="single-page1" title="Single Page">Single Page</label>
-                            </div>
-                        </li><li>
-                            <div class="nice-checkbox">
-                                <input type="checkbox" name="sports" id="sports1">
-                                <label for="sports1" title="Sports">Sports</label>
-                            </div>
-                        </li><li>
-                            <div class="nice-checkbox">
-                                <input type="checkbox" name="trade-show" id="trade-show1">
-                                <label for="trade-show1" title="Trade Show">Trade Show</label>
-                            </div>
-                        </li><li>
-                            <div class="nice-checkbox">
-                                <input type="checkbox" name="workshop" id="workshop1">
-                                <label for="workshop1" title="Workshops">Workshops</label>
-                            </div>
-                        </li>
+                        <?php
+                        $terms = get_terms('features', array('hide_empty' => false));
+                        if (count($terms) > 0) {
+                            foreach ($terms as $term) {
+                                ?>
+                                <li>
+                                    <div class="nice-checkbox">
+                                        <input type="checkbox" name="<?php echo $term->slug; ?>" id="<?php echo $term->slug; ?>">
+                                        <label for="<?php echo $term->slug; ?>" title="<?php echo $term->name; ?>"><?php echo $term->name; ?></label>
+                                    </div>
+                                </li>
+                                <?php
+                            }
+                        }
+                        ?>
                     </ul>
 
                 </div>
@@ -216,50 +136,21 @@ wp_reset_query();
                     <span>INTEGRATIONS</span>
 
                     <ul class="sorting" style="">
-                        <li>
-                            <div class="nice-checkbox">
-                                <input type="checkbox" name="item1" id="item1">
-                                <label for="item1" title="Item1">Item1</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="nice-checkbox">
-                                <input type="checkbox" name="item2" id="item2">
-                                <label for="item2" title="Item2">Item2</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="nice-checkbox">
-                                <input type="checkbox" name="item3" id="item3">
-                                <label for="item3" title="Item3">Item1</label>
-                            </div>
-                        </li>
-                    </ul>
-
-                </div>
-
-                <div class="sorting-wrap__item">
-                    <span>SUPPORT</span>
-
-                    <ul class="sorting" style="">
-                        <li>
-                            <div class="nice-checkbox">
-                                <input type="checkbox" name="item4" id="item4">
-                                <label for="item4" title="Item4">Item4</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="nice-checkbox">
-                                <input type="checkbox" name="item5" id="item5">
-                                <label for="item5" title="Item5">Item5</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="nice-checkbox">
-                                <input type="checkbox" name="item6" id="item6">
-                                <label for="item6" title="Item6">Item6</label>
-                            </div>
-                        </li>
+                        <?php
+                        $terms = get_terms('integrations', array('hide_empty' => false));
+                        if (count($terms) > 0) {
+                            foreach ($terms as $term) {
+                                ?>
+                                <li>
+                                    <div class="nice-checkbox">
+                                        <input type="checkbox" name="<?php echo $term->slug; ?>" id="<?php echo $term->slug; ?>">
+                                        <label for="<?php echo $term->slug; ?>" title="<?php echo $term->name; ?>"><?php echo $term->name; ?></label>
+                                    </div>
+                                </li>
+                                <?php
+                            }
+                        }
+                        ?>
                     </ul>
 
                 </div>
@@ -267,28 +158,27 @@ wp_reset_query();
                 <div class="sorting-wrap__item">
                     <span>EVENT TYPE</span>
 
-                    <ul class="sorting" style="">
-                        <li>
-                            <div class="nice-checkbox">
-                                <input type="checkbox" name="item7" id="item7">
-                                <label for="item7" title="Item7">Item1</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="nice-checkbox">
-                                <input type="checkbox" name="item8" id="item8">
-                                <label for="item8" title="Item8">Item8</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="nice-checkbox">
-                                <input type="checkbox" name="item9" id="item9">
-                                <label for="item9" title="Item9">Item9</label>
-                            </div>
-                        </li>
+                    <ul class="sorting">
+                        <?php
+                        $terms = get_terms('event_types', array('hide_empty' => false));
+                        if (count($terms) > 0) {
+                            foreach ($terms as $term) {
+                                ?>
+                                <li>
+                                    <div class="nice-checkbox">
+                                        <input type="checkbox" name="<?php echo $term->slug; ?>" id="<?php echo $term->slug; ?>">
+                                        <label for="<?php echo $term->slug; ?>" title="<?php echo $term->name; ?>"><?php echo $term->name; ?></label>
+                                    </div>
+                                </li>
+                                <?php
+                            }
+                        }
+                        ?>
                     </ul>
 
                 </div>
+
+                <a href="<?php echo home_url('comparison-table'); ?>" class="btn btn_blue">Compare All</a>
 
             </div>
 

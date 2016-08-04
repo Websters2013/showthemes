@@ -83,7 +83,7 @@ if (have_posts()):
                             <div class="inside-bundle__item-list">
                                 <ul>
                                     <li>Includes all our themes</li>
-                                    <li><span>Tutorials, Video Tutorials and FAQs</span></li>
+                                    <li><span>Tutorials, Video Tutorials and FAQsljkljljl</span></li>
                                     <li><span>Updates and Bug Fixes for a Year</span></li>
                                 </ul>
                                 <a href="<?php echo do_shortcode('[add_to_cart_url sku="' . get_field('buy_theme_only_cart_id') . '"]'); ?>" class="btn btn_red">Buy Now</a>

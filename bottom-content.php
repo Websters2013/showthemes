@@ -1,7 +1,3 @@
-<?php if (is_page_template('page-store-bundle.php')) { ?>
-
-<?php } ?>
-
 <?php
 if (!is_page_template('page-store-bundle.php')) {
     $query5 = new WP_Query('pagename=store');
@@ -175,777 +171,54 @@ if (!is_page_template('page-store-bundle.php')) {
     <!-- happy-customers -->
     <div class="hcustomers__forbes">
         <div class="container">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/pic/forbes.png" alt="Forbes"/>
-            <a href="http://www.forbes.com/sites/theyec/2014/04/23/how-to-launch-and-sell-out-a-conference-in-five-weeks/" target="_blank">AS FEATURED IN FORBES →</a>
+            <h2>COMPARE ALL THEMES</h2>
+            <a href="<?php echo home_url('comparison-table'); ?>" target="_blank">START NOW →</a>
         </div>
     </div>
     <!-- /hcustomers__forbes -->
 </section>
 
-<!--comparison-table-->
-<section class="comparison-table">
-    <div class="container">
-        <h2>Theme comparison</h2>
-        <div class="smart-wrapper">
-            <div class="smart-pricing">
-                <div class="pricing-tables elegant-style six-colm">
-                    <div class="colm even">
-                        <div class="colm-list features-list">
-
-                            <div class="pricing-header">
-
-                            </div><!-- end .pricing-header section -->
-                            <ul class="title">
-                                <li>
-                                    <span>Support</span>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li data-feature="Tutorials">
-                                    <span>Tutorial</span>
-                                    <span class="info" title="">
-                                        <span><span>Extensive tutorials, FAQ and documentation</span></span>
-                                    </span>
-                                </li>
-                                <li data-feature="Video Tutorials">
-                                    <span>Video Tutorials</span>
-                                    <span class="info" title="">
-                                        <span><span>Video tutorials showing how to set up and configure the theme</span></span>
-                                    </span>
-                                </li>
-                            </ul>
-                            <ul class="title">
-                                <li>
-                                    <span>Features</span>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li data-feature="Social Integration">
-                                    <span>Social Integration</span>
-                                    <span class="info" title="">
-                                        <span><span>Social media display and integration</span></span>
-                                    </span>
-                                </li>
-                                <li data-feature="Advanced Schedule">
-                                    <span>Advanced Schedule</span>
-                                    <span class="info" title="">
-                                        <span><span>Multiple tracks, concurrent sessions, multiple locations</span></span>
-                                    </span>
-                                </li>
-                                <li data-feature="One Click Demo">
-                                    <span>One Click Demo</span>
-                                    <span class="info" title="">
-                                        <span><span>Install a copy of the demo site in one click</span></span>
-                                    </span>
-                                </li>
-                                <li data-feature="Exhibitor Profiles">
-                                    <span>Exhibitor Profiles</span>
-                                    <span class="info" title="">
-                                        <span><span>Display Exhbitors profiles and searchable directory</span></span>
-                                    </span>
-                                </li>
-                                <li data-feature="Multiple Headers">
-                                    <span>Multiple Headers</span>
-                                    <span class="info" title="">
-                                        <span><span>Ability to change different header options</span></span>
-                                    </span>
-                                </li>
-                                <li data-feature="Event Composer">
-                                    <span>Event Composer</span>
-                                    <span class="info" title="">
-                                        <span><span>Event Composer is our drag and drop system to create your page.</span></span>
-                                    </span>
-                                </li>
-                                <li data-feature="Multievent">
-                                    <span>Multievent</span>
-                                    <span class="info" title="">
-                                        <span><span>Manage multiple events from one platform</span></span>
-                                    </span>
-                                </li>
-                            </ul>
-                            <ul class="title">
-                                <li>
-                                    <span>Integrations</span>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li data-feature="Eventbrite">
-                                    <span>Eventbrite</span>
-                                    <span class="info" title="">
-                                        <span><span>Works with Registration and Ticketing provider Eventbrite</span></span>
-                                    </span>
-                                </li>
-                                <li data-feature="Event Espresso">
-                                    <span>Event Espresso</span>
-                                    <span class="info" title="">
-                                        <span><span>Works with Registration and Ticketing provider Event Espresso</span></span>
-                                    </span>
-                                </li>
-                                <li data-feature="Woocommerce">
-                                    <span>Woocommerce</span>
-                                    <span class="info" title="">
-                                        <span><span>Works with Woocommerce</span></span>
-                                    </span>
-                                </li>
-                                <li data-feature="Gravity Forms">
-                                    <span>Gravity Forms</span>
-                                    <span class="info" title="">
-                                        <span><span>Works with Gravity Forms</span></span>
-                                    </span>
-                                </li>
-                                <li data-feature="Xing Events">
-                                    <span>Xing Events</span>
-                                    <span class="info" title="">
-                                        <span><span>Works with Registration and Ticketing provider Xing Events</span></span>
-                                    </span>
-                                </li>
-                                <li data-feature="Etouches">
-                                    <span>Etouches</span>
-                                    <span class="info" title="">
-                                        <span><span>Works with Registration and Ticketing provider Etouches</span></span>
-                                    </span>
-                                </li>
-                                <li data-feature="TicketTailor">
-                                    <span>TicketTailor</span>
-                                    <span class="info" title="">
-                                        <span><span>Works with Registration and Ticketing provider TicketTailor</span></span>
-                                    </span>
-                                </li>
-                            </ul>
-                        </div><!-- end .colm-list section -->
-
-                    </div><!-- end .colm section -->
-
-                    <div class="comparison-table__swiper swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><div class="colm odd">
-                                    <div class="colm-list">
-
-                                        <div class="pricing-header header-colored">
-                                            <h3 class="monoblue-top-4" style="font-size: 14px">Conference Pro</h3>
-                                            <h4 class="monoblue-bottom-2"><span>from $79</span></h4>
-                                            <!--                                <div class="ribbon-large">-->
-                                            <!--                                    <div class="ribbon-inner ribbon-new">NEW!</div>-->
-                                            <!--                                </div><!-- end .ribbon-large section -->
-                                        </div><!-- end .pricing-header section -->
-
-                                        <ul class="title">
-                                            <li>
-                                            </li>
-                                        </ul>
-                                        <ul>
-                                            <li data-feature="Tutorials"><span class="check-circle"></span></li>
-                                            <li data-feature="Video Tutorials"><span class="check-circle"></span></li>
-                                        </ul>
-                                        <ul class="title">
-                                            <li></li>
-                                        </ul>
-                                        <ul>
-                                            <li data-feature="Social Integration"><span class="check-circle"></span></li>
-                                            <li data-feature="Advanced Schedule"><span class="check-circle"></span></li>
-                                            <li data-feature="One Click Demo"><span class="check-circle"></span></li>
-                                            <li data-feature="Exhibitor Profiles"><span class="check-circle"></span></li>
-                                            <li data-feature="Multiple Headers"><span class="check-circle"></span></li>
-                                            <li data-feature="Event Composer"><span class="check-circle"></span></li>
-                                            <li data-feature="Multievent"><span class="not-support"></span></li>
-                                        </ul>
-                                        <ul class="title">
-                                            <li></li>
-                                        </ul>
-                                        <ul>
-                                            <li data-feature="Eventbrite"><span class="check-circle"></span></li>
-                                            <li data-feature="Event Espresso"><span class="check-circle"></span></li>
-                                            <li data-feature="Woocommerce"><span class="check-circle"></span></li>
-                                            <li data-feature="Gravity Forms"><span class="check-circle"></span></li>
-                                            <li data-feature="Xing Events"><span class="check-circle"></span></li>
-                                            <li data-feature="Etouches"><span class="check-circle"></span></li>
-                                            <li data-feature="TicketTailor"><span class="check-circle"></span></li>
-                                        </ul>
-
-                                        <div class="pricing-footer">
-                                            <button type="button" class="pricing-button monoblue4-btn" onclick="window.location.href = '/conference-pro-wordpress-theme'"> Buy </button>
-                                        </div><!-- end .pricing-footer section -->
-
-                                    </div><!-- end .colm-list section -->
-
-                                </div></div>
-                            <div class="swiper-slide"><div class="colm even">
-                                    <div class="colm-list">
-
-                                        <div class="pricing-header header-colored">
-                                            <h3 class="monoblue-top-4">Fudge 2.0</h3>
-                                            <h4 class="monoblue-bottom-2"><span>from $79</span></h4>
-                                        </div><!-- end .pricing-header section -->
-
-                                        <ul class="title">
-                                            <li>
-                                            </li>
-                                        </ul>
-                                        <ul>
-                                            <li data-feature="Tutorials"><span class="check-circle"></span></li>
-                                            <li data-feature="Video Tutorials"><span class="check-circle"></span></li>
-                                        </ul>
-                                        <ul class="title">
-                                            <li></li>
-                                        </ul>
-                                        <ul>
-                                            <li data-feature="Social Integration"><span class="check-circle"></span></li>
-                                            <li data-feature="Advanced Schedule"><span class="check-circle"></span></li>
-                                            <li data-feature="One Click Demo"><span class="check-circle"></span></li>
-                                            <li data-feature="Exhibitor Profiles"><span class="check-circle"></span></li>
-                                            <li data-feature="Multiple Headers"><span class="check-circle"></span></li>
-                                            <li data-feature="Event Composer"><span class="check-circle"></span></li>
-                                            <li data-feature="Multievent"><span class="not-support"></span></li>
-                                        </ul>
-                                        <ul class="title">
-                                            <li></li>
-                                        </ul>
-                                        <ul>
-                                            <li data-feature="Eventbrite"><span class="check-circle"></span></li>
-                                            <li data-feature="Event Espresso"><span class="check-circle"></span></li>
-                                            <li data-feature="Woocommerce"><span class="check-circle"></span></li>
-                                            <li data-feature="Gravity Forms"><span class="check-circle"></span></li>
-                                            <li data-feature="Xing Events"><span class="check-circle"></span></li>
-                                            <li data-feature="Etouches"><span class="check-circle"></span></li>
-                                            <li data-feature="TicketTailor"><span class="check-circle"></span></li>
-                                        </ul>
-
-                                        <div class="pricing-footer">
-                                            <button type="button" class="pricing-button monoblue4-btn" onclick="window.location.href = '/conference-wordpress-theme-fudge'"> Buy </button>
-                                        </div><!-- end .pricing-footer section -->
-
-                                    </div><!-- end .colm-list section -->
-
-                                </div></div>
-                            <div class="swiper-slide"><div class="colm odd">
-                                    <div class="colm-list">
-
-                                        <div class="pricing-header header-colored">
-
-                                            <h3 class="monoblue-top-2">Mondree</h3>
-                                            <h4 class="monoblue-bottom-2"><span>from $79</span></h4>
-
-                                        </div><!-- end .pricing-header section -->
-
-                                        <ul class="title">
-                                            <li>
-                                            </li>
-                                        </ul>
-                                        <ul>
-                                            <li data-feature="Tutorials"><span class="check-circle"></span></li>
-                                            <li data-feature="Video Tutorials"><span class="check-circle"></span></li>
-                                        </ul>
-                                        <ul class="title">
-                                            <li></li>
-                                        </ul>
-                                        <ul>
-                                            <li data-feature="Social Integration"><span class="check-circle"></span></li>
-                                            <li data-feature="Advanced Schedule"><span class="check-circle"></span></li>
-                                            <li data-feature="One Click Demo"><span class="check-circle"></span></li>
-                                            <li data-feature="Exhibitor Profiles"><span class="not-support"></span></li>
-                                            <li data-feature="Multiple Headers"><span class="check-circle"></span></li>
-                                            <li data-feature="Event Composer"><span class="check-circle"></span></li>
-                                            <li data-feature="Multievent"><span class="not-support"></span></li>
-                                        </ul>
-                                        <ul class="title">
-                                            <li></li>
-                                        </ul>
-                                        <ul>
-                                            <li data-feature="Eventbrite"><span class="check-circle"></span></li>
-                                            <li data-feature="Event Espresso"><span class="check-circle"></span></li>
-                                            <li data-feature="Woocommerce"><span class="check-circle"></span></li>
-                                            <li data-feature="Gravity Forms"><span class="check-circle"></span></li>
-                                            <li data-feature="Xing Events"><span class="check-circle"></span></li>
-                                            <li data-feature="Etouches"><span class="check-circle"></span></li>
-                                            <li data-feature="TicketTailor"><span class="check-circle"></span></li>
-                                        </ul>
-
-                                        <div class="pricing-footer">
-                                            <button type="button" class="pricing-button monoblue2-btn" onclick="window.location.href = '/mondree-event-management-theme'"> Buy </button>
-                                        </div><!-- end .pricing-footer section -->
-
-                                    </div><!-- end .colm-list section -->
-
-                                </div></div>
-                            <div class="swiper-slide"><div class="colm even">
-                                    <div class="colm-list">
-
-                                        <div class="pricing-header header-colored">
-
-                                            <h3 class="monoblue-top-2">Khore</h3>
-                                            <h4 class="monoblue-bottom-2"><span>from $79</span></h4>
-
-                                        </div><!-- end .pricing-header section -->
-
-                                        <ul class="title">
-                                            <li>
-                                            </li>
-                                        </ul>
-                                        <ul>
-                                            <li data-feature="Tutorials"><span class="check-circle"></span></li>
-                                            <li data-feature="Video Tutorials"><span class="check-circle"></span></li>
-                                        </ul>
-                                        <ul class="title">
-                                            <li></li>
-                                        </ul>
-                                        <ul>
-                                            <li data-feature="Social Integration"><span class="check-circle"></span></li>
-                                            <li data-feature="Advanced Schedule"><span class="check-circle"></span></li>
-                                            <li data-feature="One Click Demo"><span class="check-circle"></span></li>
-                                            <li data-feature="Exhibitor Profiles"><span class="not-support"></span></li>
-                                            <li data-feature="Multiple Headers"><span class="check-circle"></span></li>
-                                            <li data-feature="Event Composer"><span class="check-circle"></span></li>
-                                            <li data-feature="Multievent"><span class="not-support"></span></li>
-                                        </ul>
-                                        <ul class="title">
-                                            <li></li>
-                                        </ul>
-                                        <ul>
-                                            <li data-feature="Eventbrite"><span class="check-circle"></span></li>
-                                            <li data-feature="Event Espresso"><span class="check-circle"></span></li>
-                                            <li data-feature="Woocommerce"><span class="check-circle"></span></li>
-                                            <li data-feature="Gravity Forms"><span class="check-circle"></span></li>
-                                            <li data-feature="Xing Events"><span class="check-circle"></span></li>
-                                            <li data-feature="Etouches"><span class="check-circle"></span></li>
-                                            <li data-feature="TicketTailor"><span class="check-circle"></span></li>
-                                        </ul>
-
-                                        <div class="pricing-footer">
-                                            <button type="button" class="pricing-button monoblue2-btn" onclick="window.location.href = '/event-wordpress-theme-khore'"> Buy </button>
-                                        </div><!-- end .pricing-footer section -->
-
-                                    </div><!-- end .colm-list section -->
-
-                                </div></div>
-                            <div class="swiper-slide"><div class="colm odd">
-                                    <div class="colm-list">
-
-                                        <div class="pricing-header header-colored">
-
-                                            <h3 class="monoblue-top-2">Vertoh</h3>
-                                            <h4 class="monoblue-bottom-2"><span>from $79</span></h4>
-
-                                        </div><!-- end .pricing-header section -->
-
-                                        <ul class="title">
-                                            <li>
-                                            </li>
-                                        </ul>
-                                        <ul>
-                                            <li data-feature="Tutorials"><span class="check-circle"></span></li>
-                                            <li data-feature="Video Tutorials"><span class="check-circle"></span></li>
-                                        </ul>
-                                        <ul class="title">
-                                            <li></li>
-                                        </ul>
-                                        <ul>
-                                            <li data-feature="Social Integration"><span class="check-circle"></span></li>
-                                            <li data-feature="Advanced Schedule"><span class="check-circle"></span></li>
-                                            <li data-feature="One Click Demo"><span class="check-circle"></span></li>
-                                            <li data-feature="Exhibitor Profiles"><span class="check-circle"></span></li>
-                                            <li data-feature="Multiple Headers"><span class="check-circle"></span></li>
-                                            <li data-feature="Event Composer"><span class="not-support"></span></li>
-                                            <li data-feature="Multievent"><span class="not-support"></span></li>
-                                        </ul>
-                                        <ul class="title">
-                                            <li></li>
-                                        </ul>
-                                        <ul>
-                                            <li data-feature="Eventbrite"><span class="check-circle"></span></li>
-                                            <li data-feature="Event Espresso"><span class="check-circle"></span></li>
-                                            <li data-feature="Woocommerce"><span class="check-circle"></span></li>
-                                            <li data-feature="Gravity Forms"><span class="not-support"></span></li>
-                                            <li data-feature="Xing Events"><span class="check-circle"></span></li>
-                                            <li data-feature="Etouches"><span class="check-circle"></span></li>
-                                            <li data-feature="TicketTailor"><span class="not-support"></span></li>
-                                        </ul>
-
-                                        <div class="pricing-footer">
-                                            <button type="button" class="pricing-button monoblue2-btn" onclick="window.location.href = '/2015-event-wordpress-theme-vertoh'"> Buy </button>
-                                        </div><!-- end .pricing-footer section -->
-
-                                    </div><!-- end .colm-list section -->
-
-                                </div></div>
-                            <div class="swiper-slide"><div class="colm even">
-                                    <div class="colm-list">
-                                        <div class="pricing-header header-colored">
-                                            <h3 class="monoblue-top-3">Tyler</h3>
-                                            <h4 class="monoblue-bottom-2"><span>from $79</span></h4>
-                                        </div><!-- end .pricing-header section -->
-
-                                        <ul class="title">
-                                            <li>
-                                            </li>
-                                        </ul>
-                                        <ul>
-                                            <li data-feature="Tutorials"><span class="check-circle"></span></li>
-                                            <li data-feature="Video Tutorials"><span class="check-circle"></span></li>
-                                        </ul>
-                                        <ul class="title">
-                                            <li></li>
-                                        </ul>
-                                        <ul>
-                                            <li data-feature="Social Integration"><span class="check-circle"></span></li>
-                                            <li data-feature="Advanced Schedule"><span class="check-circle"></span></li>
-                                            <li data-feature="One Click Demo"><span class="check-circle"></span></li>
-                                            <li data-feature="Exhibitor Profiles"><span class="not-support"></span></li>
-                                            <li data-feature="Multiple Headers"><span class="not-support"></span></li>
-                                            <li data-feature="Event Composer"><span class="not-support"></span></li>
-                                            <li data-feature="Multievent"><span class="not-support"></span></li>
-                                        </ul>
-                                        <ul class="title">
-                                            <li></li>
-                                        </ul>
-                                        <ul>
-                                            <li data-feature="Eventbrite"><span class="check-circle"></span></li>
-                                            <li data-feature="Event Espresso"><span class="check-circle"></span></li>
-                                            <li data-feature="Woocommerce"><span class="check-circle"></span></li>
-                                            <li data-feature="Gravity Forms"><span class="not-support"></span></li>
-                                            <li data-feature="Xing Events"><span class="check-circle"></span></li>
-                                            <li data-feature="Etouches"><span class="check-circle"></span></li>
-                                            <li data-feature="TicketTailor"><span class="not-support"></span></li>
-                                        </ul>
-
-                                        <div class="pricing-footer">
-                                            <button type="button" class="pricing-button monoblue3-btn" onclick="window.location.href = '/new-event-wordpress-theme-tyler'"> Buy </button>
-                                        </div><!-- end .pricing-footer section -->
-
-                                    </div><!-- end .colm-list section -->
-
-                                </div></div>
-                            <div class="swiper-slide"><div class="colm even">
-                                    <div class="colm-list">
-
-                                        <div class="pricing-header header-colored">
-                                            <h3 class="monoblue-top-4">Januas</h3>
-                                            <h4 class="monoblue-bottom-2"><span>from $79</span></h4>
-                                        </div><!-- end .pricing-header section -->
-
-                                        <ul class="title">
-                                            <li>
-                                            </li>
-                                        </ul>
-                                        <ul>
-                                            <li data-feature="Tutorials"><span class="check-circle"></span></li>
-                                            <li data-feature="Video Tutorials"><span class="not-support"></span></li>
-                                        </ul>
-                                        <ul class="title">
-                                            <li></li>
-                                        </ul>
-                                        <ul>
-                                            <li data-feature="Social Integration"><span class="check-circle"></span></li>
-                                            <li data-feature="Advanced Schedule"><span class="check-circle"></span></li>
-                                            <li data-feature="One Click Demo"><span class="check-circle"></span></li>
-                                            <li data-feature="Exhibitor Profiles"><span class="not-support"></span></li>
-                                            <li data-feature="Multiple Headers"><span class="not-support"></span></li>
-                                            <li data-feature="Event Composer"><span class="not-support"></span></li>
-                                            <li data-feature="Multievent"><span class="check-circle"></span></li>
-                                        </ul>
-                                        <ul class="title">
-                                            <li></li>
-                                        </ul>
-                                        <ul>
-                                            <li data-feature="Eventbrite"><span class="check-circle"></span></li>
-                                            <li data-feature="Event Espresso"><span class="check-circle"></span></li>
-                                            <li data-feature="Woocommerce"><span class="check-circle"></span></li>
-                                            <li data-feature="Gravity Forms"><span class="check-circle"></span></li>
-                                            <li data-feature="Xing Events"><span class="not-support"></span></li>
-                                            <li data-feature="Etouches"><span class="not-support"></span></li>
-                                            <li data-feature="TicketTailor"><span class="not-support"></span></li>
-                                        </ul>
-
-                                        <div class="pricing-footer">
-                                            <button type="button" class="pricing-button monoblue4-btn" onclick="window.location.href = '/multiple-event-wordpress-theme-januas'"> Buy </button>
-                                        </div><!-- end .pricing-footer section -->
-
-                                    </div><!-- end .colm-list section -->
-
-                                </div></div>
-                            <div class="swiper-slide"><div class="colm even">
-                                    <div class="colm-list">
-
-                                        <div class="pricing-header header-colored">
-                                            <h3 class="monoblue-top-4">Januas</h3>
-                                            <h4 class="monoblue-bottom-2"><span>from $79</span></h4>
-                                        </div><!-- end .pricing-header section -->
-
-                                        <ul class="title">
-                                            <li>
-                                            </li>
-                                        </ul>
-                                        <ul>
-                                            <li data-feature="Tutorials"><span class="check-circle"></span></li>
-                                            <li data-feature="Video Tutorials"><span class="not-support"></span></li>
-                                        </ul>
-                                        <ul class="title">
-                                            <li></li>
-                                        </ul>
-                                        <ul>
-                                            <li data-feature="Social Integration"><span class="check-circle"></span></li>
-                                            <li data-feature="Advanced Schedule"><span class="check-circle"></span></li>
-                                            <li data-feature="One Click Demo"><span class="check-circle"></span></li>
-                                            <li data-feature="Exhibitor Profiles"><span class="not-support"></span></li>
-                                            <li data-feature="Multiple Headers"><span class="not-support"></span></li>
-                                            <li data-feature="Event Composer"><span class="not-support"></span></li>
-                                            <li data-feature="Multievent"><span class="check-circle"></span></li>
-                                        </ul>
-                                        <ul class="title">
-                                            <li></li>
-                                        </ul>
-                                        <ul>
-                                            <li data-feature="Eventbrite"><span class="check-circle"></span></li>
-                                            <li data-feature="Event Espresso"><span class="check-circle"></span></li>
-                                            <li data-feature="Woocommerce"><span class="check-circle"></span></li>
-                                            <li data-feature="Gravity Forms"><span class="check-circle"></span></li>
-                                            <li data-feature="Xing Events"><span class="not-support"></span></li>
-                                            <li data-feature="Etouches"><span class="not-support"></span></li>
-                                            <li data-feature="TicketTailor"><span class="not-support"></span></li>
-                                        </ul>
-
-                                        <div class="pricing-footer">
-                                            <button type="button" class="pricing-button monoblue4-btn" onclick="window.location.href = '/multiple-event-wordpress-theme-januas'"> Buy </button>
-                                        </div><!-- end .pricing-footer section -->
-
-                                    </div><!-- end .colm-list section -->
-
-                                </div></div>
-                            <div class="swiper-slide"><div class="colm even">
-                                    <div class="colm-list">
-
-                                        <div class="pricing-header header-colored">
-                                            <h3 class="monoblue-top-4">Januas</h3>
-                                            <h4 class="monoblue-bottom-2"><span>from $79</span></h4>
-                                        </div><!-- end .pricing-header section -->
-
-                                        <ul class="title">
-                                            <li>
-                                            </li>
-                                        </ul>
-                                        <ul>
-                                            <li data-feature="Tutorials"><span class="check-circle"></span></li>
-                                            <li data-feature="Video Tutorials"><span class="not-support"></span></li>
-                                        </ul>
-                                        <ul class="title">
-                                            <li></li>
-                                        </ul>
-                                        <ul>
-                                            <li data-feature="Social Integration"><span class="check-circle"></span></li>
-                                            <li data-feature="Advanced Schedule"><span class="check-circle"></span></li>
-                                            <li data-feature="One Click Demo"><span class="check-circle"></span></li>
-                                            <li data-feature="Exhibitor Profiles"><span class="not-support"></span></li>
-                                            <li data-feature="Multiple Headers"><span class="not-support"></span></li>
-                                            <li data-feature="Event Composer"><span class="not-support"></span></li>
-                                            <li data-feature="Multievent"><span class="check-circle"></span></li>
-                                        </ul>
-                                        <ul class="title">
-                                            <li></li>
-                                        </ul>
-                                        <ul>
-                                            <li data-feature="Eventbrite"><span class="check-circle"></span></li>
-                                            <li data-feature="Event Espresso"><span class="check-circle"></span></li>
-                                            <li data-feature="Woocommerce"><span class="check-circle"></span></li>
-                                            <li data-feature="Gravity Forms"><span class="check-circle"></span></li>
-                                            <li data-feature="Xing Events"><span class="not-support"></span></li>
-                                            <li data-feature="Etouches"><span class="not-support"></span></li>
-                                            <li data-feature="TicketTailor"><span class="not-support"></span></li>
-                                        </ul>
-
-                                        <div class="pricing-footer">
-                                            <button type="button" class="pricing-button monoblue4-btn" onclick="window.location.href = '/multiple-event-wordpress-theme-januas'"> Buy </button>
-                                        </div><!-- end .pricing-footer section -->
-
-                                    </div><!-- end .colm-list section -->
-
-                                </div></div>
-                        </div>
-                        <!-- Add Arrows -->
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
-
-                    <div class="comparison-table__headers">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-
-                                    <div class="pricing-header">
-                                        <h3 class="monoblue-top-4">Conference Pro</h3>
-                                        <h4 class="monoblue-bottom-2"><span>from $79</span></h4>
-                                    </div>
-
-                                </div>
-                                <div class="swiper-slide">
-
-                                    <div class="pricing-header">
-                                        <h3 class="monoblue-top-4">Fudge 2.0</h3>
-                                        <h4 class="monoblue-bottom-2"><span>from $79</span></h4>
-                                    </div>
-
-                                </div>
-                                <div class="swiper-slide">
-
-                                    <div class="pricing-header">
-                                        <h3 class="monoblue-top-4">Mondree</h3>
-                                        <h4 class="monoblue-bottom-2"><span>from $79</span></h4>
-                                    </div>
-
-                                </div>
-                                <div class="swiper-slide">
-
-                                    <div class="pricing-header">
-                                        <h3 class="monoblue-top-4">Khore</h3>
-                                        <h4 class="monoblue-bottom-2"><span>from $79</span></h4>
-                                    </div>
-
-                                </div>
-                                <div class="swiper-slide">
-
-                                    <div class="pricing-header">
-                                        <h3 class="monoblue-top-4">Vertoh</h3>
-                                        <h4 class="monoblue-bottom-2"><span>from $79</span></h4>
-                                    </div>
-
-                                </div>
-                                <div class="swiper-slide">
-
-                                    <div class="pricing-header">
-                                        <h3 class="monoblue-top-4">Tyler</h3>
-                                        <h4 class="monoblue-bottom-2"><span>from $79</span></h4>
-                                    </div>
-
-                                </div>
-                                <div class="swiper-slide">
-
-                                    <div class="pricing-header">
-                                        <h3 class="monoblue-top-4">Januas</h3>
-                                        <h4 class="monoblue-bottom-2"><span>from $79</span></h4>
-                                    </div>
-
-                                </div>
-                                <div class="swiper-slide">
-
-                                    <div class="pricing-header">
-                                        <h3 class="monoblue-top-4">Januas</h3>
-                                        <h4 class="monoblue-bottom-2"><span>from $79</span></h4>
-                                    </div>
-
-                                </div>
-                                <div class="swiper-slide">
-
-                                    <div class="pricing-header">
-                                        <h3 class="monoblue-top-4">Januas</h3>
-                                        <h4 class="monoblue-bottom-2"><span>from $79</span></h4>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                        </div>
-                    </div>
-
-                    <?php /*
-                      <div class="colm odd">
-                      <div class="colm-list">
-
-                      <div class="pricing-header header-colored">
-                      <h3 class="monoblue-top-4">Fudge</h3>
-                      <h4 class="monoblue-bottom-2"><span>from $79</span></h4>
-                      </div><!-- end .pricing-header section -->
-
-                      <ul class="title">
-                      <li>
-                      </li>
-                      </ul>
-                      <ul>
-                      <li data-feature="Tutorials"><span class="check-circle"></span></li>
-                      <li data-feature="Video Tutorials"></li>
-                      </ul>
-                      <ul class="title">
-                      <li></li>
-                      </ul>
-                      <ul>
-                      <li data-feature="Social Integration"><span class="check-circle"></span></li>
-                      <li data-feature="Advanced Schedule"><span class="check-circle"></span></li>
-                      <li data-feature="One Click Demo"><span class="check-circle"></span></li>
-                      <li data-feature="Exhibitor Profiles"></li>
-                      <li data-feature="Multiple Headers"></li>
-                      <li data-feature="Event Composer"></li>
-                      <li data-feature="Multievent"></li>
-                      </ul>
-                      <ul class="title">
-                      <li></li>
-                      </ul>
-                      <ul>
-                      <li data-feature="Eventbrite"><span class="check-circle"></span></li>
-                      <li data-feature="Event Espresso"><span class="check-circle"></span></li>
-                      <li data-feature="Woocommerce"><span class="check-circle"></span></li>
-                      <li data-feature="Gravity Forms"></li>
-                      <li data-feature="Xing Events"><span class="check-circle"></span></li>
-                      <li data-feature="Etouches"></li>
-                      <li data-feature="TicketTailor"></li>
-                      </ul>
-
-                      <div class="pricing-footer">
-                      <button type="button" class="pricing-button monoblue4-btn" onclick="window.location.href = '/conference-wordpress-theme-fudge'"> Buy </button>
-                      </div><!-- end .pricing-footer section -->
-
-                      </div><!-- end .colm-list section -->
-
-                      </div><!-- end .colm section -->
-                     */ ?>
-
-
-                </div><!-- end .pricing-tables section -->
-
-            </div><!-- end .smart-pricing section -->
-
-        </div><!-- end .smart-wrapper section -->
-    </div>
-</section>
-<!--/comparison-table-->
-
-<!-- who-buys -->
-<section class="who-buys">
-    <!-- who-buys__wrap -->
-    <div class="who-buys__wrap">
-        <?php
-        $query1 = new WP_Query('pagename=store');
-        if ($query1->have_posts()) {
-            while ($query1->have_posts()) {
-                $query1->the_post();
-                ?>
-                <?php the_field('who_buys'); ?>
-                <?php
-            }
-        } wp_reset_postdata();
-        ?>
-        <!--who-buys__list-->
-        <ul class="who-buys__list">
+<?php if (get_post_type() != 'themes') { ?>
+    <!-- who-buys -->
+    <section class="who-buys">
+        <!-- who-buys__wrap -->
+        <div class="who-buys__wrap">
             <?php
-            $query2 = new WP_Query('post_type=who-buys&posts_per_page=-1');
-            if ($query2->have_posts()) {
-                while ($query2->have_posts()) {
-                    $query2->the_post();
-                    $image = get_field('main_image');
-                    //$featured_image_url = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'full');
+            $query1 = new WP_Query('pagename=store');
+            if ($query1->have_posts()) {
+                while ($query1->have_posts()) {
+                    $query1->the_post();
                     ?>
-                    <li class="event" style="background: url(<?php echo $image['url']; ?>) center 2px no-repeat;">
-                        <span><?php the_title(); ?></span>
-                        <?php the_content(); ?>
-                    </li>
+                    <?php the_field('who_buys'); ?>
                     <?php
                 }
             } wp_reset_postdata();
             ?>
-        </ul>
-        <!--/who-buys__list-->
-    </div>
-    <!-- /who-buys__wrap -->
-</section>
-<!-- /who-buys -->
+            <!--who-buys__list-->
+            <ul class="who-buys__list">
+                <?php
+                $query2 = new WP_Query('post_type=who-buys&posts_per_page=-1');
+                if ($query2->have_posts()) {
+                    while ($query2->have_posts()) {
+                        $query2->the_post();
+                        $image = get_field('main_image');
+                        //$featured_image_url = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'full');
+                        ?>
+                        <li class="event" style="background: url(<?php echo $image['url']; ?>) center 2px no-repeat;">
+                            <span><?php the_title(); ?></span>
+                            <?php the_content(); ?>
+                        </li>
+                        <?php
+                    }
+                } wp_reset_postdata();
+                ?>
+            </ul>
+            <!--/who-buys__list-->
+        </div>
+        <!-- /who-buys__wrap -->
+    </section>
+    <!-- /who-buys -->
+<?php } ?>
 
 <!--Theme Pricing-->
 <?php
@@ -962,6 +235,220 @@ if (get_post_type() == 'themes') {
             $theme_only_product    = get_product_by_sku($theme_only_product_id);
             $theme_support_product = get_product_by_sku($theme_support_product_id);
             ?>
+            <!--faq-->
+            <section class="faq">
+                <div>
+
+                    <h2>FREQUENTLY ASKED QUESTIONS</h2>
+
+                    <!--accordion-->
+                    <div class="accordion">
+
+                        <!--accordion__item-->
+                        <div class="accordion__item">
+
+                            <!--accordion__caption-->
+                            <div class="accordion__caption">
+                                What should I consider before purchasing an event wordpress theme?
+                            </div>
+                            <!--/accordion__caption-->
+
+                            <!--accordion__content-->
+                            <div class="accordion__content">
+                                This <a href="http://www.showthemes.com/blog/choosing-event-wordpress-themes/" target="_blank">post</a> is a handy guide
+                            </div>
+                            <!--/accordion__content-->
+
+                            <!--accordion__caption-->
+                            <div class="accordion__caption">
+                                How difficult are your themes to set up? What does the support include?
+                            </div>
+                            <!--/accordion__caption-->
+
+                            <!--accordion__content-->
+                            <div class="accordion__content">
+                                You will need an intermediate knowledge of WordPress. Our help centre is very comprehensive, we populate them with tutorials, video tutorials and theme specific FAQs.
+                                <br/>
+                                For everything else, there is support. You can review our support terms here.
+                                <br/>
+                                If you are not confident with WordPress we suggest to contact our partners at <a href="https://codeable.io/?ref=ZlTg" target="_blank">Codeable</a>.
+                            </div>
+                            <!--/accordion__content-->
+
+                            <!--accordion__caption-->
+                            <div class="accordion__caption">
+                                Do you provide updates to your themes? What happens with bug fixes?
+                            </div>
+                            <!--/accordion__caption-->
+
+                            <!--accordion__content-->
+                            <div class="accordion__content">
+                                When you purchase one of our theme, you receive a license key that will give you access to updates and bug fixes for one year. Read more about licensing <a href="http://www.showthemes.com/showthemes-faqs/#license" target="_blank">here</a>.
+                            </div>
+                            <!--/accordion__content-->
+
+                            <!--accordion__caption-->
+                            <div class="accordion__caption">
+                                Can I view the back end demo of your themes?
+                            </div>
+                            <!--/accordion__caption-->
+
+                            <!--accordion__content-->
+                            <div class="accordion__content">
+                                Of course! When you land on a demo, click on the 'View Backend' button on the theme selector.
+                            </div>
+                            <!--/accordion__content-->
+
+                            <!--accordion__caption-->
+                            <div class="accordion__caption">
+                                Can I customise the theme color scheme?
+                            </div>
+                            <!--/accordion__caption-->
+
+                            <!--accordion__content-->
+                            <div class="accordion__content">
+                                All our themes have editable stylesheets (CSS). Some of our themes offer full customization without opening the CSS, conveniently from dashboard. Some others offer preset color combinations.
+                                <br/><br/>
+                                Full Color Customization from Dashboard:<br/>
+                                – Conference Pro<br/>
+                                – Fudge 2.0<br/>
+                                – Mondree<br/>
+                                – Khore<br/>
+                                <br/><br/>
+                                Preset colors:<br/>
+                                – Vertoh<br/>
+                                – Tyler<br/>
+                                – Fudge<br/>
+                                – Januas<br/>
+                                <br/><br/>
+                                CSS editing:<br/>
+                                – Event Manager Theme
+                            </div>
+                            <!--/accordion__content-->
+
+                            <!--accordion__caption-->
+                            <div class="accordion__caption">
+                                Do your themes come set up like their demo sites?
+                            </div>
+                            <!--/accordion__caption-->
+
+                            <!--accordion__content-->
+                            <div class="accordion__content">
+                                You will always need to install WordPress on your domain/hosting. Conference Pro, Fudge 2.0, Mondree, Khore, Vertoh, Tyler, Januas and Fudge have an option to populate the site with dummy data so that you can have them looking like in the demo.
+                            </div>
+                            <!--/accordion__content-->
+
+                        </div>
+                        <!--/accordion__item-->
+
+                        <!--accordion__item-->
+                        <div class="accordion__item">
+
+                            <!--accordion__caption-->
+                            <div class="accordion__caption">
+                                Are your themes translation-ready with .mo and .po files?
+                            </div>
+                            <!--/accordion__caption-->
+
+                            <!--accordion__content-->
+                            <div class="accordion__content">
+                                Conference Pro, Fudge 2.0, Mondree, Khore, Vertoh, Tyler, Januas and Fudge come in ready with translations and we can also provide .po files for both themes. Event Manager Theme doesn’t come with .po files for translation.
+                                <br/><br/>
+                                You can easily translate a po file with free software. We do not provide right to left compatibility.
+                            </div>
+                            <!--/accordion__content-->
+
+                            <!--accordion__caption-->
+                            <div class="accordion__caption">
+                                Do your themes provide registration/ticketing?
+                            </div>
+                            <!--/accordion__caption-->
+
+                            <!--accordion__content-->
+                            <div class="accordion__content">
+                                No. Our themes DO NOT have a native registration/ticketing system. We believe registration is a sensitive issue and it should be handled by dedicated plugins or services.
+                                <br/><br/>
+                                Conference Pro, Fudge 2.0, Mondree, Khore, Vertoh, Tyler, Fudge and Januas all work with Woocommerce, a free way to register attendees.
+                            </div>
+                            <!--/accordion__content-->
+
+                            <!--accordion__caption-->
+                            <div class="accordion__caption">
+                                What does your License include?
+                            </div>
+                            <!--/accordion__caption-->
+
+                            <!--accordion__content-->
+                            <div class="accordion__content">
+                                Once you purchase one of our themes, you will receive a unique license key. Each license is valid for one year of updates and bug fixes. The new version of the themes will be easily upgradable from your WordPress dashboard.
+                                <br/><br/>
+                                You can use our themes on as many domains as you wish. All our themes are 100% GPL.
+                            </div>
+                            <!--/accordion__content-->
+
+                            <!--accordion__caption-->
+                            <div class="accordion__caption">
+                                How do I renew my license?
+                            </div>
+                            <!--/accordion__caption-->
+
+                            <!--accordion__content-->
+                            <div class="accordion__content">
+                                Existing customers will be able to renew with a discount available for 1 month after the expiry date. You can generate the discount code within your dashboard.
+                            </div>
+                            <!--/accordion__content-->
+
+                            <!--accordion__caption-->
+                            <div class="accordion__caption">
+                                Can I Pay by Credit Card?
+                            </div>
+                            <!--/accordion__caption-->
+
+                            <!--accordion__content-->
+                            <div class="accordion__content">
+                                Of course you can! Once you are redirected to Paypal, you will be able to select credit card payment. Just Expand the 'Pay with a debit or credit card' tab
+                                <br/><br/>
+                                <img class="alignnone size-medium wp-image-9823" src="http://www.showthemes.com/wp-content/uploads/2014/08/rsz_paypal-with-debit-credit-card-300x232.jpg" alt="rsz_paypal-with-debit-credit-card" width="300" height="232" srcset="http://www.showthemes.com/wp-content/uploads/2014/08/rsz_paypal-with-debit-credit-card-300x232.jpg 300w, http://www.showthemes.com/wp-content/uploads/2014/08/rsz_paypal-with-debit-credit-card.jpg 355w" sizes="(max-width: 300px) 100vw, 300px">
+                            </div>
+                            <!--/accordion__content-->
+
+                            <!--accordion__caption-->
+                            <div class="accordion__caption">
+                                How can I obtain a tax invoice?
+                            </div>
+                            <!--/accordion__caption-->
+
+                            <!--accordion__content-->
+                            <div class="accordion__content">
+                                Please use the following <a href="http://www.showthemes.com/#support-form" target="_blank">form</a>. indicating your order number and your company’s VAT number. It may take up to 5 working days to receive an invoice.
+                            </div>
+                            <!--/accordion__content-->
+
+                            <!--accordion__caption-->
+                            <div class="accordion__caption">
+                                Do you offer refunds?
+                            </div>
+                            <!--/accordion__caption-->
+
+                            <!--accordion__content-->
+                            <div class="accordion__content">
+                                As with most digital products we do not offer refunds. Once you’ve downloaded the theme you are in fact free to use it whenever and wherever you prefer.
+                                <br/><br/>
+                                We invite you to make sure to check these FAQs, the theme demo site or to send us an email before making your purchase. We like to set expectations straight and we always communicate clearly what to expect in our themes.
+                                <br/><br/>
+                                If you are not sure about our themes do not proceed to purchase, send us an email instead and we will be happy to clear any doubt.
+                            </div>
+                            <!--/accordion__content-->
+                        </div>
+                        <!--/accordion__item-->
+
+                    </div>
+                    <!--/accordion-->
+
+                </div>
+            </section>
+            <!--/faq-->
+            
             <!-- inside-bundle -->
             <section class="inside-bundle" id="theme-pricing">
                 <!-- inside-bundle__wrap -->
@@ -1015,8 +502,7 @@ if (get_post_type() == 'themes') {
                                 <!-- /inside-bundle__item-header -->
                                 <!-- inside-bundle__item-price -->
                                 <div class="inside-bundle__item-price">
-                                    <div class="only">
-                                        <span>Only</span>
+                                    <div>
                                         $<?php echo intval($theme_support_product->price); ?>
                                     </div>
                                 </div>
@@ -1051,7 +537,8 @@ if (get_post_type() == 'themes') {
                                 <!-- /inside-bundle__item-header -->
                                 <!-- inside-bundle__item-price -->
                                 <div class="inside-bundle__item-price">
-                                    <div>
+                                    <div class="only">
+                                        <span>Popular</span>
                                         SAVE $
                                     </div>
                                 </div>
@@ -1260,8 +747,6 @@ if (get_post_type() == 'themes') {
     </div>
 </section>
 <!--Showcase-->
-
-
 
 <!--Contact Us-->
 <section id="support-form">

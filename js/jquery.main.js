@@ -516,12 +516,7 @@
             _window = $(window);
 
         //private methods
-        var _closeAccordion = function (  ) {
-
-
-
-            },
-            _onEvents = function () {
+        var _onEvents = function () {
 
                 _window.on( {
                     resize: function() {
@@ -530,11 +525,11 @@
                     }
                 } );
 
-                _arrowBtn.on( {
+                _arrowBtn.parent('li').on( {
 
                     click: function () {
 
-                        var curItem = $(this),
+                        var curItem = $(this).find('.menu__arrow'),
                             subMenu = curItem.next();
 
                         if( curItem.hasClass('opened') ) {
@@ -555,10 +550,30 @@
 
                 } );
 
-            },
-            _openAccordion = function (  ) {
+                _obj.on(
+                    "click",
+                    function( event ){
+                        event = event || window.event;
 
+                        if (event.stopPropagation) {
+                            event.stopPropagation();
+                        } else {
+                            event.cancelBubble = true;
+                        }
+                    }
+                );
 
+                $(document).on(
+                    "click",
+                    "body",
+                    function(){
+
+                        if( _arrowBtn.hasClass('opened') ){
+                            _arrowBtn.removeClass('opened');
+                            _arrowBtn.next().removeClass('visible');
+                        }
+                    }
+                );
 
             },
             _init = function () {
@@ -859,7 +874,7 @@
 
                         if(_window.width()<=768) {
 
-                            if( _window.scrollTop() > _headers.height() + _headers.offset().top && _window.scrollTop() < _headers.offset().top + _obj.outerHeight() ) {
+                            if( _window.scrollTop() > _headers.height() + _headers.offset().top && _window.scrollTop() < _headers.offset().top + _obj.outerHeight()-400 ) {
                                 _swiperContainerHeaders.parent().addClass('visible');
                             }
                             else {
@@ -869,7 +884,7 @@
                         }
 
                         if(_obj.hasClass('comparison-table_2')) {
-                            if( _window.scrollTop() > _headers.height() + _headers.offset().top && _window.scrollTop() < _headers.offset().top + _obj.outerHeight() ) {
+                            if( _window.scrollTop() > _headers.height() + _headers.offset().top && _window.scrollTop() < _headers.offset().top + _obj.outerHeight()-400 ) {
                                 _swiperContainerHeaders.parent().addClass('visible');
                             }
                             else {

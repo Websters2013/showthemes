@@ -126,77 +126,63 @@ if (!empty($q)) {
             </div>
         </div>
         <!--/switcher-->
-<?php } ?>
+    <?php } ?>
     <header>
         <div class="container">
             <nav>
-<?php //wp_nav_menu(array('menu' => 'Main', 'container' => false, 'menu_id' => 'main-menu')); ?>
-
+                <?php //wp_nav_menu(array('menu' => 'Main', 'container' => false, 'menu_id' => 'main-menu')); ?>
+                <?php /* <a class="cart-items<?php echo $woocommerce->cart->cart_contents_count > 0 ? ' full' : ''; ?>" href="http://www.showthemes.com/cart/"><?php _e('CART', 'showthemes'); ?></a> */ ?>
                 <ul id="main-menu" class="menu">
-                    <li id="menu-item-9444" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9444">
-                        <a href="http://www.cvfreak.com/showthemes/showthemes-faqs/">FAQs</a>
-
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                        <a href="#happy-customers">Testimonials</a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                        <a href="#">MENU</a>
                         <span class="menu__arrow"></span>
-
                         <ul class="menu__sub">
                             <li>
-                                <a href="#">ITEM 1</a>
+                                <a href="<?php echo home_url('showthemes-faqs'); ?>">FAQs</a>
                             </li>
                             <li>
-                                <a href="#">ITEM 2</a>
+                                <a href="#showcase-anchor">SHOWCASE</a>
                             </li>
                             <li>
-                                <a href="#">ITEM 3</a>
+                                <a href="<?php echo home_url('premium-wordpress-themes-affiliates'); ?>">AFFILIATES</a>
                             </li>
                         </ul>
-
                     </li>
-                    <li id="menu-item-10825" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10825">
-                        <a href="#showcase-anchor">Showcase</a>
-                    </li>
-                    <li id="menu-item-9750" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9750">
-                        <a href="http://www.cvfreak.com/showthemes/my-account/">Login</a></li>
-                    <li id="menu-item-9447" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9447">
-                        <a href="http://www.cvfreak.com/showthemes/premium-wordpress-themes-affiliates/">Affiliates</a>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                        <a href="<?php echo home_url('my-account'); ?>">Login</a>
                     </li>
                 </ul>
-
-                <a class="cart-items<?php echo $woocommerce->cart->cart_contents_count > 0 ? ' full' : ''; ?>" href="http://www.showthemes.com/cart/"><?php _e('CART', 'showthemes'); ?></a>
             </nav>
             <a title="<?php bloginfo('title'); ?>" href="<?php bloginfo('url'); ?>" class="header__logo">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="<?php bloginfo('title'); ?>" height="63" width="168" class="header__logo-big">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo_mini.png" alt="<?php bloginfo('title'); ?>" height="53" width="53" class="header__logo-mini">
             </a>
-<?php //wp_nav_menu(array('menu' => 'Main', 'container' => false, 'menu_id' => 'mobile-menu')); ?>
-
+            <?php //wp_nav_menu(array('menu' => 'Main', 'container' => false, 'menu_id' => 'mobile-menu')); ?>
             <ul id="mobile-menu" class="menu">
-                <li id="menu-item-9444" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9444">
-                    <a href="http://www.cvfreak.com/showthemes/showthemes-faqs/">FAQs</a>
-
+                <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                    <a href="#happy-customers">Testimonials</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                    <a href="#">MENU</a>
+                    <span class="menu__arrow"></span>
                     <ul class="menu__sub">
                         <li>
-                            <a href="#">ITEM 1</a>
+                            <a href="<?php echo home_url('showthemes-faqs'); ?>">FAQs</a>
                         </li>
                         <li>
-                            <a href="#">ITEM 2</a>
+                            <a href="#showcase-anchor">SHOWCASE</a>
                         </li>
                         <li>
-                            <a href="#">ITEM 3</a>
+                            <a href="<?php echo home_url('premium-wordpress-themes-affiliates'); ?>">AFFILIATES</a>
                         </li>
                     </ul>
-
-
                 </li>
-                <li id="menu-item-10825" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10825">
-                    <a href="http://www.showthemes.com/#showcase-anchor">Showcase</a>
-                </li>
-                <li id="menu-item-9750" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9750">
-                    <a href="http://www.cvfreak.com/showthemes/my-account/">Login</a>
-                </li>
-                <li id="menu-item-9447" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9447">
-                    <a href="http://www.cvfreak.com/showthemes/premium-wordpress-themes-affiliates/">Affiliates</a>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                    <a href="<?php echo home_url('my-account'); ?>">Login</a>
                 </li>
             </ul>
-
         </div>
     </header>

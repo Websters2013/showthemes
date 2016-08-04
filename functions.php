@@ -67,7 +67,7 @@ function st_init() {
                         $email        = $user_data->user_email;
                         $externalId   = $user->data->ID;
                         $organization = '';
-                        $key          = ''; //get_option('woo_wzn_apikey');
+                        $key          = 'JAYcvD0UzSP4cZtHfWWG6gbj4E8VZ1CYL35s3BNGgVFh2Jpk'; //get_option('woo_wzn_apikey');
                         $prefix       = get_option('woo_wzn_subdomain');
                         $now          = time();
                         $token        = array(
@@ -637,7 +637,10 @@ register_post_type('who-buys', array(
 add_action('init', 'build_taxonomies', 0);
 
 function build_taxonomies() {
+    register_taxonomy('support', 'themes', array('hierarchical' => true, 'label' => 'Support', 'query_var' => true, 'rewrite' => true));
     register_taxonomy('features', 'themes', array('hierarchical' => true, 'label' => 'Features', 'query_var' => true, 'rewrite' => true));
+    register_taxonomy('event_types', 'themes', array('hierarchical' => true, 'label' => 'Event Types', 'query_var' => true, 'rewrite' => true));
+    register_taxonomy('integrations', 'themes', array('hierarchical' => true, 'label' => 'Integrations', 'query_var' => true, 'rewrite' => true));
 }
 
 function event_manager_customize_register($wp_customize) {
@@ -790,7 +793,7 @@ function get_product_by_sku($sku) {
     return null;
 }
 
-add_filter('woocommerce_xero_line_item_account_code', 'st_woocommerce_xero_line_item_account_code', 10, 2);
+/*add_filter('woocommerce_xero_line_item_account_code', 'st_woocommerce_xero_line_item_account_code', 10, 2);
 
 function st_woocommerce_xero_line_item_account_code($account_code, $line_item) {
     //@wp_mail('simone@showthemes.com', 'debug xero', sprintf('%s', print_r($_REQUEST, true)));
@@ -832,7 +835,7 @@ function st_woocommerce_xero_line_item_account_code($account_code, $line_item) {
         }
     }
     return $ret;
-}
+}*/
 
 function st_create_renewal_coupon($customer_email, $product_id, $expiry_date) {
     $coupon_code   = sprintf('%s_%s_%s_%s', $customer_email, $product_id, date('YmdHis'), rand());
@@ -1069,7 +1072,7 @@ add_action('woocommerce_applied_coupon', 'st_woocommerce_applied_coupon');
 function st_customer_has_valid_license($user_id) {
     // checks if customer has at least one valid license
     $ret         = false;
-//    $user_orders = WCAM()->helpers->get_users_data($user_id);
+    $user_orders = WCAM()->helpers->get_users_data($user_id);
     if (!empty($user_orders)) {
         foreach ($user_orders as $order_key => $data) {
             $post_id           = $data['parent_product_id'];

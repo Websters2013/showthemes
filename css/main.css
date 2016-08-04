@@ -276,8 +276,8 @@ nav ul {
 
 nav li {
     position: relative;
-    margin-left: 31px;
-    letter-spacing: 3px;
+    margin-left: 18px;
+    letter-spacing: 1px;
     display: inline-block;
     vertical-align: top;
 }
@@ -288,7 +288,7 @@ nav li:first-child {
 
 nav a {
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
 }
 
@@ -359,27 +359,44 @@ nav .cart-items.active {
 }
 .menu__arrow:after {
     position: absolute;
-    top: 63%;
+    top: 62%;
     left: 50%;
-    border: 8px solid transparent;
-    border-top: 8px solid #fff;
+    border: 6px solid transparent;
+    border-top: 6px solid #fff;
     content: '';
     -webkit-transform: translateX(-50%);
     transform: translate(-50%, -50%);
+}
+.black .menu__arrow:after {
+    border-top-color: #000;
 }
 .menu__sub {
     opacity: 0;
     visibility: hidden;
     position: absolute;
-    left: 0;
-    top: 22px;
+    left: 50%;
+    top: 30px;
     width: 200px;
-    background: rgba(0,0,0,0.5);
-    padding: 20px;
+    background: rgba(0,0,0,1);
     -webkit-transition: opacity 0.3s ease, visibility 0.3s ease;
     -moz-transition: opacity 0.3s ease, visibility 0.3s ease;
     transition: opacity 0.3s ease, visibility 0.3s ease;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
 
+}
+.menu__sub:after {
+    position: absolute;
+    top: -6px;
+    left: calc(50% - 10px);
+    border: 6px solid transparent;
+    border-top: 6px solid #ed3e33;
+    content: '';
+    -webkit-transform: translateX(-50%) rotate(180deg);
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+.black .menu__sub {
+    background: rgba(255,255,255,0.5);
 }
 .menu__sub.visible {
     opacity: 1;
@@ -387,7 +404,21 @@ nav .cart-items.active {
 }
 .menu__sub li {
     display: block;
-    margin: 0 0 5px;
+    margin: 0 ;
+    font-size: 14px;
+    line-height: 18px;
+    border-top: 1px solid #4a4a4a;
+    letter-spacing: 1px;
+}
+.menu__sub li:first-child {
+    border-top: none;
+}
+.menu__sub li a {
+    display: block;
+    padding: 6px 14px;
+}
+.menu__sub li a:hover {
+    color: #19b2c4;
 }
 
 #mobile-menu {
@@ -992,7 +1023,7 @@ footer .btn:hover {
     justify-content: flex-start;
 }
 .need_event__featured img {
-    margin: 0 41px 20px 0;
+    margin: 0 20px 20px 0;
 }
 /*----------- hcustomers --------*/
 .hcustomers{
@@ -1318,6 +1349,10 @@ footer .btn:hover {
     text-align: right;
     margin-right: -6px;
 }
+.hcustomers__forbes h2{
+    display:inline;
+    color:#ffffff;
+}
 /*----------- /hcustomers --------*/
 
 /*-----------hero-bundle--------*/
@@ -1347,7 +1382,7 @@ footer .btn:hover {
     color: #fff;
     display: block;
     max-width: 960px;
-    margin: 0 auto;
+    margin: 0;
 }
 .hero-bundle .buy-themes__item {
     margin-bottom: 0;
@@ -1385,6 +1420,7 @@ footer .btn:hover {
     left: 0;
     width: 72.3% !important;
     height: 100%;
+    max-width: 1600px;
     background-position: top right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1570,9 +1606,17 @@ footer .btn:hover {
     z-index: 20;
     max-width: 1200px;
     padding: 0 20px;
-    margin: 40px auto 60px;
+    margin: 20px auto 40px;
 }
-
+.sorting-wrap .btn {
+    display: inline-block;
+    vertical-align: top;
+    width: 22.4%;
+    height: 49px;
+    padding: 17px 5px;
+    font-size: 16px;
+    line-height: 16px;
+}
 .sorting-wrap__item {
     position: relative;
     z-index: 4;
@@ -1642,7 +1686,6 @@ footer .btn:hover {
     font-family: 'proximanova-regular', sans-serif;
 }
 .sorting-wrap__item .sorting li .nice-checkbox {
-    padding: 12px 23px;
     font-size: 18px;
     line-height: 18px;
     background: #ebe8ee;
@@ -1653,6 +1696,17 @@ footer .btn:hover {
     -moz-transition: color 0.3s ease, background 0.3s ease;
     transition: color 0.3s ease, background 0.3s ease;
 }
+.sorting-wrap__item .sorting li .nice-checkbox label {
+    padding: 12px 23px 12px 48px;
+}
+.sorting-wrap__item .sorting li .nice-checkbox label:after {
+    top: 12px;
+    left: 23px;
+}
+.sorting-wrap__item .sorting li .nice-checkbox label:before {
+    top: 16px;
+    left: 27px;
+}
 .sorting-wrap__item .sorting li .nice-checkbox:hover {
     color: #fff;
     background: #5eb2c1;
@@ -1661,12 +1715,14 @@ footer .btn:hover {
     opacity: 1;
     visibility: visible;
 }
-
+.sorting-wrap .btn_blue{
+    background: #19b2c4 !important;
+}
 .sorting-labels {
     position: relative;
     max-width: 1200px;
     padding: 0 20px;
-    margin: 40px auto 60px;
+    margin: 20px auto 20px;
 }
 .sorting-label {
     display: inline-block;
@@ -4184,7 +4240,7 @@ input[type=submit].btn{
     text-align: center;
     border-radius: 100%;
     background: #1da4b8;
-    font-size: 24px;
+    font-size: 15px;
     line-height: 24px;
     font-family: "Oswald", sans-serif;
     font-weight: 700;
@@ -5203,6 +5259,7 @@ footer ul#menu-our-themes li{
     padding-top: 0;
 }
 /*****************************MEDIA QUERIES FOR MOBILE STYLES *******************************************/
+
 
 @media only screen and (max-width: 1024px) {
 
@@ -6881,6 +6938,10 @@ footer ul#menu-our-themes li{
         width: 100%;
         margin: 0 0 20px;
     }
+    .sorting-wrap .btn {
+        width: 200px !important;
+        margin: 0 0 20px;
+    }
     /* --------------- /sorting-wrap ------------------- */
 
     /*.comparison-table {display:none;}*/
@@ -7618,6 +7679,40 @@ footer ul#menu-our-themes li{
         width: 100%;
     }
     /* --------------- /col --------------- */
+}
+
+@media (min-width: 1024px) and (max-width: 1300px) {
+
+    .hero-bundle {
+        padding: 80px 0 0;
+    }
+    .hero-bundle h1 {
+        font-size: 48px;
+        line-height: 63px;
+        margin-bottom: 20px;
+
+    }
+    .hero-bundle h1+p {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .meet-vertoh__links {
+        margin: 20px 0 55px;
+    }
+    .meet-vertoh__links .btn {
+        height: 50px;
+        line-height: 52px;
+    }
+    .hero-bundle__cost {
+        margin: 0 0 30px 86px;
+        font-size: 80px;
+        line-height: 100px;
+    }
+    .hero-bundle__price img {
+        width: 100%;
+    }
+
+
 }
 
 /*****OLD IE STYLES *******/
